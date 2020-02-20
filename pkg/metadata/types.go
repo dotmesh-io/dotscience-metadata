@@ -115,6 +115,7 @@ type RunMetadata struct {
 	Summary    map[string]string `json:"summary,omitempty"`
 	Parameters map[string]string `json:"parameters,omitempty"`
 
-	ExecStart time.Time `json:"exec_start,omitempty"`
-	ExecEnd   time.Time `json:"exec_end,omitempty"`
+	ExecStart     time.Time `json:"exec_start,omitempty"`
+	ExecEnd       time.Time `json:"exec_end,omitempty"`
+	CommentsCount int64     `json:"comments_count"`
 }
