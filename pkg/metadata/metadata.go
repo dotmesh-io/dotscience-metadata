@@ -265,6 +265,7 @@ func ParseCommitMetadata(input map[string]string) CommitMetadata {
 				WorkspaceOutputFiles: getStringSlice(prefix + "output-files"),
 				DatasetInputFiles:    getIFMap(prefix + "dataset-input-files."),
 				DatasetOutputFiles:   getStringSliceMap(prefix + "dataset-output-files."),
+				CommentsCount:        getInt64(prefix+"comments-count", 0),
 			}
 		}
 		return runs
