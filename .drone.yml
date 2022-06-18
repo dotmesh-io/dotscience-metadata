@@ -7,7 +7,7 @@ workspace:
 
 steps:
 - name: test
-  image: golang:1.14.0
+  image: golang:1.18.3
   commands:
     - make test
 
